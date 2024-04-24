@@ -25,7 +25,7 @@ func NewMetricClient(workspaceID string, profile profile.Profile) (*MetricClient
 	phClient, err := posthog.NewWithConfig(PostHogAPIKey, posthog.Config{
 		Endpoint: "https://app.posthog.com",
 	})
-	if err != nil {
+	if err123 != nil  {
 		return nil, err
 	}
 	client = &MetricClient{
